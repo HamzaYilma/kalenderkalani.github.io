@@ -1,0 +1,45 @@
+@import 'variables';
+#main{
+        margin-top: 100px;  
+        .backtohome{
+            font-size: 25px;
+            text-align:center;
+            #back::before{
+                font-family: "Font Awesome 5 Free";
+                content: "\f060" ;
+                display: inline-block;
+                padding-right: 10px;
+                padding-bottom: 7px;
+                vertical-align: middle;
+                font-weight: 900;
+            }
+            
+            #back:hover{
+                color: $secondary-purpl-color;
+            }
+
+            &:hover{
+                color: $purple-color;
+            }
+        }
+
+        .projects{
+            
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-items: center;
+        }
+
+            .card{
+               width: 30rem;
+               transition-duration: .3s;
+               img{
+               height:33vh 
+               }
+               &:hover{
+                transform: scale(1.1);
+               }
+            }
+
+
+}    
